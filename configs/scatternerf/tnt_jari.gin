@@ -1,0 +1,23 @@
+### TnT Specific Arguments
+
+run.dataset_name = "dense"
+run.datadir = "data/tanks_and_temples"
+
+LitData.batch_sampler = "all_images"
+LitDataTnT.cam_scale_factor = 0.125
+LitDataDense.cam_scale_factor = 0.125
+
+### NeRF Standard Specific Arguments
+
+ScatterNeRF.num_coarse_samples = 256
+ScatterNeRF.num_fine_samples = 128
+ScatterNeRF.noise_std = 1.
+
+LitData.batch_size = 8192
+LitData.chunk = 8192
+LitData.use_pixel_centers = True
+LitData.epoch_size = 2500
+
+run.max_steps = 1000000
+run.log_every_n_steps = 100
+run.model_name = "scatternerf"
