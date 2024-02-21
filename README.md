@@ -1,7 +1,14 @@
-# ScatterNeRF: Seeing Through Fog with Physically-Based Inverse Neural Rendering
+# ScatterNeRF: Seeing Through Fog with Physically-Based Inverse Neural Rendering (ICCV23)
 
 
-[Project Page](https://light.princeton.edu/publication/scatternerf/) | [Paper](https://openaccess.thecvf.com/content/ICCV2023/papers/Ramazzina_ScatterNeRF_Seeing_Through_Fog_with_Physically-Based_Inverse_Neural_Rendering_ICCV_2023_paper.pdf) 
+<p align="center">
+<b> <a href="https://light.princeton.edu/publication/scatternerf/">Project Page</a></b> | <b><a href="https://openaccess.thecvf.com/content/ICCV2023/papers/Ramazzina_ScatterNeRF_Seeing_Through_Fog_with_Physically-Based_Inverse_Neural_Rendering_ICCV_2023_paper.pdf">Paper</a></b>
+</p>
+
+<p align="center"> 
+ <img src="scatternerf_teaser.gif" alt="animated" height=300/>
+</p>
+
 
 Official code implementation of [ScatterNeRF](https://light.princeton.edu/publication/scatternerf/). This work is being built on top of the great [NeRF-Factory](https://github.com/kakaobrain/nerf-factory) codebase. 
 
@@ -32,3 +39,7 @@ python3 -m run --ginc configs/[model]/[data].gin
 python3 run.py --ginc configs/[model]/[data].gin --scene [scene] --ginb run.run_train=False
 # ex) CUDA_VISIBLE_DEVICES=0 python3 run.py --ginc configs/scatternerf/tnt.gin --scene_name Sequence00_left_right --ginb run.run_train=False
 ```
+
+### License
+Copyright (c) 2022 POSTECH, KAIST, and Kakao Brain Corp. All Rights Reserved.
+Licensed under the Apache License, Version 2.0 (see [LICENSE](https://github.com/kakaobrain/NeRF-Factory/tree/main/LICENSE) for details)
